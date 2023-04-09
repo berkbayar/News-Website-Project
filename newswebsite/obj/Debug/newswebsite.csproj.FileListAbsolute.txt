@@ -1,0 +1,142 @@
+C:\Users\bdbay\Desktop\deneme\newswebsite\obj\Debug\newswebsite.csproj.CoreCompileInputs.cache
+C:\Users\bdbay\Desktop\deneme\newswebsite\bin\newswebsite.dll.config
+C:\Users\bdbay\Desktop\deneme\newswebsite\bin\newswebsite.dll
+C:\Users\bdbay\Desktop\deneme\newswebsite\bin\newswebsite.pdb
+C:\Users\bdbay\Desktop\deneme\newswebsite\bin\roslyn\csc.exe
+C:\Users\bdbay\Desktop\deneme\newswebsite\bin\roslyn\csc.exe.config
+C:\Users\bdbay\Desktop\deneme\newswebsite\bin\roslyn\csc.rsp
+C:\Users\bdbay\Desktop\deneme\newswebsite\bin\roslyn\csi.exe
+C:\Users\bdbay\Desktop\deneme\newswebsite\bin\roslyn\csi.exe.config
+C:\Users\bdbay\Desktop\deneme\newswebsite\bin\roslyn\csi.rsp
+C:\Users\bdbay\Desktop\deneme\newswebsite\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\bdbay\Desktop\deneme\newswebsite\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\bdbay\Desktop\deneme\newswebsite\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\bdbay\Desktop\deneme\newswebsite\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\bdbay\Desktop\deneme\newswebsite\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\bdbay\Desktop\deneme\newswebsite\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\bdbay\Desktop\deneme\newswebsite\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\bdbay\Desktop\deneme\newswebsite\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\bdbay\Desktop\deneme\newswebsite\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\bdbay\Desktop\deneme\newswebsite\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\bdbay\Desktop\deneme\newswebsite\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\bdbay\Desktop\deneme\newswebsite\bin\roslyn\Microsoft.Win32.Primitives.dll
+C:\Users\bdbay\Desktop\deneme\newswebsite\bin\roslyn\System.AppContext.dll
+C:\Users\bdbay\Desktop\deneme\newswebsite\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\bdbay\Desktop\deneme\newswebsite\bin\roslyn\System.Console.dll
+C:\Users\bdbay\Desktop\deneme\newswebsite\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+C:\Users\bdbay\Desktop\deneme\newswebsite\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\bdbay\Desktop\deneme\newswebsite\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\bdbay\Desktop\deneme\newswebsite\bin\roslyn\System.Globalization.Calendars.dll
+C:\Users\bdbay\Desktop\deneme\newswebsite\bin\roslyn\System.IO.Compression.dll
+C:\Users\bdbay\Desktop\deneme\newswebsite\bin\roslyn\System.IO.Compression.ZipFile.dll
+C:\Users\bdbay\Desktop\deneme\newswebsite\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\bdbay\Desktop\deneme\newswebsite\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\bdbay\Desktop\deneme\newswebsite\bin\roslyn\System.Net.Http.dll
+C:\Users\bdbay\Desktop\deneme\newswebsite\bin\roslyn\System.Net.Sockets.dll
+C:\Users\bdbay\Desktop\deneme\newswebsite\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\bdbay\Desktop\deneme\newswebsite\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+C:\Users\bdbay\Desktop\deneme\newswebsite\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\bdbay\Desktop\deneme\newswebsite\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\bdbay\Desktop\deneme\newswebsite\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\bdbay\Desktop\deneme\newswebsite\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\bdbay\Desktop\deneme\newswebsite\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\bdbay\Desktop\deneme\newswebsite\bin\roslyn\System.Threading.Tasks.Extensions.dll
+C:\Users\bdbay\Desktop\deneme\newswebsite\bin\roslyn\System.ValueTuple.dll
+C:\Users\bdbay\Desktop\deneme\newswebsite\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\bdbay\Desktop\deneme\newswebsite\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\bdbay\Desktop\deneme\newswebsite\bin\roslyn\System.Xml.XPath.dll
+C:\Users\bdbay\Desktop\deneme\newswebsite\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\bdbay\Desktop\deneme\newswebsite\bin\roslyn\vbc.exe
+C:\Users\bdbay\Desktop\deneme\newswebsite\bin\roslyn\vbc.exe.config
+C:\Users\bdbay\Desktop\deneme\newswebsite\bin\roslyn\vbc.rsp
+C:\Users\bdbay\Desktop\deneme\newswebsite\bin\roslyn\VBCSCompiler.exe
+C:\Users\bdbay\Desktop\deneme\newswebsite\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\bdbay\Desktop\deneme\newswebsite\bin\Google.Protobuf.dll
+C:\Users\bdbay\Desktop\deneme\newswebsite\bin\ZstdNet.dll
+C:\Users\bdbay\Desktop\deneme\newswebsite\bin\K4os.Compression.LZ4.Streams.dll
+C:\Users\bdbay\Desktop\deneme\newswebsite\bin\BouncyCastle.Crypto.dll
+C:\Users\bdbay\Desktop\deneme\newswebsite\bin\System.Memory.dll
+C:\Users\bdbay\Desktop\deneme\newswebsite\bin\System.Buffers.dll
+C:\Users\bdbay\Desktop\deneme\newswebsite\bin\K4os.Compression.LZ4.dll
+C:\Users\bdbay\Desktop\deneme\newswebsite\bin\K4os.Hash.xxHash.dll
+C:\Users\bdbay\Desktop\deneme\newswebsite\bin\System.Numerics.Vectors.dll
+C:\Users\bdbay\Desktop\deneme\newswebsite\bin\EntityFramework.xml
+C:\Users\bdbay\Desktop\deneme\newswebsite\bin\EntityFramework.SqlServer.xml
+C:\Users\bdbay\Desktop\deneme\newswebsite\bin\MySql.Data.xml
+C:\Users\bdbay\Desktop\deneme\newswebsite\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\bdbay\Desktop\deneme\newswebsite\obj\Debug\newswebsite.csproj.CopyComplete
+C:\Users\bdbay\Desktop\deneme\newswebsite\obj\Debug\newswebsite.dll
+C:\Users\bdbay\Desktop\deneme\newswebsite\obj\Debug\newswebsite.pdb
+C:\Users\bdbay\Desktop\deneme\newswebsite\bin\CKEditor.NET.pdb
+C:\Users\bdbay\Desktop\deneme\newswebsite\obj\Debug\newswebsite.csproj.AssemblyReference.cache
+C:\Users\bdbay\Desktop\my database project\newswebsite\bin\newswebsite.dll.config
+C:\Users\bdbay\Desktop\my database project\newswebsite\bin\newswebsite.dll
+C:\Users\bdbay\Desktop\my database project\newswebsite\bin\newswebsite.pdb
+C:\Users\bdbay\Desktop\my database project\newswebsite\bin\roslyn\csc.exe
+C:\Users\bdbay\Desktop\my database project\newswebsite\bin\roslyn\csc.exe.config
+C:\Users\bdbay\Desktop\my database project\newswebsite\bin\roslyn\csc.rsp
+C:\Users\bdbay\Desktop\my database project\newswebsite\bin\roslyn\csi.exe
+C:\Users\bdbay\Desktop\my database project\newswebsite\bin\roslyn\csi.exe.config
+C:\Users\bdbay\Desktop\my database project\newswebsite\bin\roslyn\csi.rsp
+C:\Users\bdbay\Desktop\my database project\newswebsite\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\bdbay\Desktop\my database project\newswebsite\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\bdbay\Desktop\my database project\newswebsite\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\bdbay\Desktop\my database project\newswebsite\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\bdbay\Desktop\my database project\newswebsite\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\bdbay\Desktop\my database project\newswebsite\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\bdbay\Desktop\my database project\newswebsite\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\bdbay\Desktop\my database project\newswebsite\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\bdbay\Desktop\my database project\newswebsite\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\bdbay\Desktop\my database project\newswebsite\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\bdbay\Desktop\my database project\newswebsite\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\bdbay\Desktop\my database project\newswebsite\bin\roslyn\Microsoft.Win32.Primitives.dll
+C:\Users\bdbay\Desktop\my database project\newswebsite\bin\roslyn\System.AppContext.dll
+C:\Users\bdbay\Desktop\my database project\newswebsite\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\bdbay\Desktop\my database project\newswebsite\bin\roslyn\System.Console.dll
+C:\Users\bdbay\Desktop\my database project\newswebsite\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+C:\Users\bdbay\Desktop\my database project\newswebsite\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\bdbay\Desktop\my database project\newswebsite\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\bdbay\Desktop\my database project\newswebsite\bin\roslyn\System.Globalization.Calendars.dll
+C:\Users\bdbay\Desktop\my database project\newswebsite\bin\roslyn\System.IO.Compression.dll
+C:\Users\bdbay\Desktop\my database project\newswebsite\bin\roslyn\System.IO.Compression.ZipFile.dll
+C:\Users\bdbay\Desktop\my database project\newswebsite\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\bdbay\Desktop\my database project\newswebsite\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\bdbay\Desktop\my database project\newswebsite\bin\roslyn\System.Net.Http.dll
+C:\Users\bdbay\Desktop\my database project\newswebsite\bin\roslyn\System.Net.Sockets.dll
+C:\Users\bdbay\Desktop\my database project\newswebsite\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\bdbay\Desktop\my database project\newswebsite\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+C:\Users\bdbay\Desktop\my database project\newswebsite\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\bdbay\Desktop\my database project\newswebsite\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\bdbay\Desktop\my database project\newswebsite\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\bdbay\Desktop\my database project\newswebsite\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\bdbay\Desktop\my database project\newswebsite\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\bdbay\Desktop\my database project\newswebsite\bin\roslyn\System.Threading.Tasks.Extensions.dll
+C:\Users\bdbay\Desktop\my database project\newswebsite\bin\roslyn\System.ValueTuple.dll
+C:\Users\bdbay\Desktop\my database project\newswebsite\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\bdbay\Desktop\my database project\newswebsite\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\bdbay\Desktop\my database project\newswebsite\bin\roslyn\System.Xml.XPath.dll
+C:\Users\bdbay\Desktop\my database project\newswebsite\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\bdbay\Desktop\my database project\newswebsite\bin\roslyn\vbc.exe
+C:\Users\bdbay\Desktop\my database project\newswebsite\bin\roslyn\vbc.exe.config
+C:\Users\bdbay\Desktop\my database project\newswebsite\bin\roslyn\vbc.rsp
+C:\Users\bdbay\Desktop\my database project\newswebsite\bin\roslyn\VBCSCompiler.exe
+C:\Users\bdbay\Desktop\my database project\newswebsite\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\bdbay\Desktop\my database project\newswebsite\bin\Google.Protobuf.dll
+C:\Users\bdbay\Desktop\my database project\newswebsite\bin\ZstdNet.dll
+C:\Users\bdbay\Desktop\my database project\newswebsite\bin\K4os.Compression.LZ4.Streams.dll
+C:\Users\bdbay\Desktop\my database project\newswebsite\bin\BouncyCastle.Crypto.dll
+C:\Users\bdbay\Desktop\my database project\newswebsite\bin\System.Memory.dll
+C:\Users\bdbay\Desktop\my database project\newswebsite\bin\System.Buffers.dll
+C:\Users\bdbay\Desktop\my database project\newswebsite\bin\K4os.Compression.LZ4.dll
+C:\Users\bdbay\Desktop\my database project\newswebsite\bin\K4os.Hash.xxHash.dll
+C:\Users\bdbay\Desktop\my database project\newswebsite\bin\System.Numerics.Vectors.dll
+C:\Users\bdbay\Desktop\my database project\newswebsite\bin\CKEditor.NET.pdb
+C:\Users\bdbay\Desktop\my database project\newswebsite\bin\EntityFramework.xml
+C:\Users\bdbay\Desktop\my database project\newswebsite\bin\EntityFramework.SqlServer.xml
+C:\Users\bdbay\Desktop\my database project\newswebsite\bin\MySql.Data.xml
+C:\Users\bdbay\Desktop\my database project\newswebsite\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\bdbay\Desktop\my database project\newswebsite\obj\Debug\newswebsite.csproj.AssemblyReference.cache
+C:\Users\bdbay\Desktop\my database project\newswebsite\obj\Debug\newswebsite.csproj.CoreCompileInputs.cache
+C:\Users\bdbay\Desktop\my database project\newswebsite\obj\Debug\newswebsite.csproj.CopyComplete
+C:\Users\bdbay\Desktop\my database project\newswebsite\obj\Debug\newswebsite.dll
+C:\Users\bdbay\Desktop\my database project\newswebsite\obj\Debug\newswebsite.pdb

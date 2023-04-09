@@ -1,0 +1,707 @@
+﻿<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="packages\EntityFramework.6.4.4\build\EntityFramework.props" Condition="Exists('packages\EntityFramework.6.4.4\build\EntityFramework.props')" />
+  <Import Project="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{D18FEC71-2FA9-4B38-815E-01B79E0513F1}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>newswebsite</RootNamespace>
+    <AssemblyName>newswebsite</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort>44385</IISExpressSSLPort>
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CKEditor.NET">
+      <HintPath>..\..\17-Onyedinci Hafta(Haber Sitesi)\17-Onyedinci Hafta(Haber Sitesi)\ASP.NET 9.HAFTA\Haber Sitesi Uygulama\web\Bin\CKEditor.NET.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>packages\EntityFramework.6.4.4\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>packages\EntityFramework.6.4.4\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="MySql.Data, Version=8.0.31.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform">
+      <HintPath>packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="bin\BouncyCastle.Crypto.dll" />
+    <Content Include="bin\CKEditor.NET.dll" />
+    <Content Include="bin\CKEditor.NET.pdb" />
+    <Content Include="bin\EntityFramework.dll" />
+    <Content Include="bin\EntityFramework.SqlServer.dll" />
+    <Content Include="bin\EntityFramework.SqlServer.xml" />
+    <Content Include="bin\EntityFramework.xml" />
+    <Content Include="bin\Google.Protobuf.dll" />
+    <Content Include="bin\K4os.Compression.LZ4.dll" />
+    <Content Include="bin\K4os.Compression.LZ4.Streams.dll" />
+    <Content Include="bin\K4os.Hash.xxHash.dll" />
+    <Content Include="bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll" />
+    <Content Include="bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml" />
+    <Content Include="bin\MySql.Data.dll" />
+    <Content Include="bin\MySql.Data.xml" />
+    <Content Include="bin\newswebsite.dll" />
+    <Content Include="bin\newswebsite.pdb" />
+    <Content Include="bin\roslyn\csc.exe" />
+    <Content Include="bin\roslyn\csi.exe" />
+    <Content Include="bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll" />
+    <Content Include="bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll" />
+    <Content Include="bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll" />
+    <Content Include="bin\roslyn\Microsoft.CodeAnalysis.dll" />
+    <Content Include="bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll" />
+    <Content Include="bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll" />
+    <Content Include="bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll" />
+    <Content Include="bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll" />
+    <Content Include="bin\roslyn\Microsoft.Win32.Primitives.dll" />
+    <Content Include="bin\roslyn\System.AppContext.dll" />
+    <Content Include="bin\roslyn\System.Collections.Immutable.dll" />
+    <Content Include="bin\roslyn\System.Console.dll" />
+    <Content Include="bin\roslyn\System.Diagnostics.DiagnosticSource.dll" />
+    <Content Include="bin\roslyn\System.Diagnostics.FileVersionInfo.dll" />
+    <Content Include="bin\roslyn\System.Diagnostics.StackTrace.dll" />
+    <Content Include="bin\roslyn\System.Globalization.Calendars.dll" />
+    <Content Include="bin\roslyn\System.IO.Compression.dll" />
+    <Content Include="bin\roslyn\System.IO.Compression.ZipFile.dll" />
+    <Content Include="bin\roslyn\System.IO.FileSystem.dll" />
+    <Content Include="bin\roslyn\System.IO.FileSystem.Primitives.dll" />
+    <Content Include="bin\roslyn\System.Net.Http.dll" />
+    <Content Include="bin\roslyn\System.Net.Sockets.dll" />
+    <Content Include="bin\roslyn\System.Reflection.Metadata.dll" />
+    <Content Include="bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll" />
+    <Content Include="bin\roslyn\System.Security.Cryptography.Algorithms.dll" />
+    <Content Include="bin\roslyn\System.Security.Cryptography.Encoding.dll" />
+    <Content Include="bin\roslyn\System.Security.Cryptography.Primitives.dll" />
+    <Content Include="bin\roslyn\System.Security.Cryptography.X509Certificates.dll" />
+    <Content Include="bin\roslyn\System.Text.Encoding.CodePages.dll" />
+    <Content Include="bin\roslyn\System.Threading.Tasks.Extensions.dll" />
+    <Content Include="bin\roslyn\System.ValueTuple.dll" />
+    <Content Include="bin\roslyn\System.Xml.ReaderWriter.dll" />
+    <Content Include="bin\roslyn\System.Xml.XmlDocument.dll" />
+    <Content Include="bin\roslyn\System.Xml.XPath.dll" />
+    <Content Include="bin\roslyn\System.Xml.XPath.XDocument.dll" />
+    <Content Include="bin\roslyn\vbc.exe" />
+    <Content Include="bin\roslyn\VBCSCompiler.exe" />
+    <Content Include="bin\System.Buffers.dll" />
+    <Content Include="bin\System.Memory.dll" />
+    <Content Include="bin\System.Numerics.Vectors.dll" />
+    <Content Include="bin\ZstdNet.dll" />
+    <Content Include="css\960.css" />
+    <Content Include="css\base.css" />
+    <Content Include="css\bootstrap-responsive.min.css" />
+    <Content Include="css\bootstrap-theme.css" />
+    <Content Include="css\bootstrap-theme.min.css" />
+    <Content Include="css\bootstrap.css" />
+    <Content Include="css\bootstrap.min.css" />
+    <Content Include="css\devices\1000.css" />
+    <Content Include="css\devices\479.css" />
+    <Content Include="css\devices\767.css" />
+    <Content Include="css\docs.css" />
+    <Content Include="css\flexslider.css" />
+    <Content Include="css\font-awesome.min.css" />
+    <Content Include="css\fontello\fontello.css" />
+    <Content Include="css\fontello\font\fontello0792.svg" />
+    <Content Include="css\images\animated-overlay.html" />
+    <Content Include="css\images\ui-bg_flat_0_aaaaaa_40x100.html" />
+    <Content Include="css\images\ui-bg_glass_55_fbf9ee_1x400.html" />
+    <Content Include="css\images\ui-bg_glass_95_fef1ec_1x400.html" />
+    <Content Include="css\images\ui-icons_222222_256x240.html" />
+    <Content Include="css\images\ui-icons_2e83ff_256x240.html" />
+    <Content Include="css\images\ui-icons_cd0a0a_256x240.html" />
+    <Content Include="css\main.css" />
+    <Content Include="css\mixins.css" />
+    <Content Include="css\prettify.css" />
+    <Content Include="css\sl-slide.css" />
+    <Content Include="css\style.css" />
+    <Content Include="css\superfish.css" />
+    <Content Include="css\ui.css" />
+    <Content Include="css\variables.css" />
+    <Content Include="Default.aspx" />
+    <Content Include="detay.aspx" />
+    <Content Include="duzenle.aspx" />
+    <Content Include="haberler.aspx" />
+    <Content Include="images\avatar\128.jpg" />
+    <Content Include="images\avatar\48.jpg" />
+    <Content Include="images\avatar\profile-pic.png" />
+    <Content Include="images\bg\1.jpg" />
+    <Content Include="images\bg\2.jpg" />
+    <Content Include="images\bg\3.jpg" />
+    <Content Include="images\bg\bg.png" />
+    <Content Include="images\bg\login-background.png" />
+    <Content Include="images\blogs\1.jpg" />
+    <Content Include="images\blogs\10.jpg" />
+    <Content Include="images\blogs\11.jpg" />
+    <Content Include="images\blogs\12.jpg" />
+    <Content Include="images\blogs\2.jpg" />
+    <Content Include="images\blogs\3.jpg" />
+    <Content Include="images\blogs\4.jpg" />
+    <Content Include="images\blogs\5.jpg" />
+    <Content Include="images\blogs\6.jpg" />
+    <Content Include="images\blogs\7.jpg" />
+    <Content Include="images\blogs\8.jpg" />
+    <Content Include="images\blogs\9.jpg" />
+    <Content Include="images\blogs\blog_item1.jpg" />
+    <Content Include="images\delete.png" />
+    <Content Include="images\gallery\1.jpg" />
+    <Content Include="images\gallery\10.jpg" />
+    <Content Include="images\gallery\11.jpg" />
+    <Content Include="images\gallery\12.jpg" />
+    <Content Include="images\gallery\2.jpg" />
+    <Content Include="images\gallery\3.jpg" />
+    <Content Include="images\gallery\4.jpg" />
+    <Content Include="images\gallery\5.jpg" />
+    <Content Include="images\gallery\6.jpg" />
+    <Content Include="images\gallery\7.jpg" />
+    <Content Include="images\gallery\8.jpg" />
+    <Content Include="images\gallery\9.jpg" />
+    <Content Include="images\gallery\blog_item1.jpg" />
+    <Content Include="images\icons\loading.gif" />
+    <Content Include="images\thumbs\arch-1.jpg" />
+    <Content Include="images\thumbs\arch-2.jpg" />
+    <Content Include="images\thumbs\autumn-1.jpg" />
+    <Content Include="images\thumbs\boats-1.jpg" />
+    <Content Include="images\thumbs\book-1.jpg" />
+    <Content Include="images\thumbs\business-1.jpg" />
+    <Content Include="images\thumbs\calendar-1.jpg" />
+    <Content Include="images\thumbs\car-1.jpg" />
+    <Content Include="images\thumbs\christmas-1.jpg" />
+    <Content Include="images\thumbs\christmas-2.jpg" />
+    <Content Include="images\thumbs\christmas-3.jpg" />
+    <Content Include="images\thumbs\city-1.jpg" />
+    <Content Include="images\thumbs\city-2.jpg" />
+    <Content Include="images\thumbs\coffee-grass.jpg" />
+    <Content Include="images\thumbs\coins.jpg" />
+    <Content Include="images\thumbs\crayons.jpg" />
+    <Content Include="images\thumbs\cupcakes.jpg" />
+    <Content Include="images\thumbs\eggs-nest.jpg" />
+    <Content Include="images\thumbs\flower-1.jpg" />
+    <Content Include="images\thumbs\flower-2.jpg" />
+    <Content Include="images\thumbs\flower-3.jpg" />
+    <Content Include="images\thumbs\fountain.jpg" />
+    <Content Include="images\thumbs\leaves.jpg" />
+    <Content Include="images\thumbs\lichterman.jpg" />
+    <Content Include="images\thumbs\pinecone.jpg" />
+    <Content Include="images\thumbs\river-1.jpg" />
+    <Content Include="images\thumbs\river-2.jpg" />
+    <Content Include="images\thumbs\sunset-1.jpg" />
+    <Content Include="images\thumbs\tree.jpg" />
+    <Content Include="images\thumbs\winter-1.jpg" />
+    <Content Include="images\thumbs\winter-2.jpg" />
+    <Content Include="images\thumbs\winter-sun.jpg" />
+    <Content Include="images\thumbs\woodstump.jpg" />
+    <Content Include="images\tick.png" />
+    <Content Include="img\avatar.png" />
+    <Content Include="img\banner\1.png" />
+    <Content Include="img\banner\2.png" />
+    <Content Include="img\banner\3.png" />
+    <Content Include="img\banner\4.png" />
+    <Content Include="img\bg.jpg" />
+    <Content Include="img\blockquote.png" />
+    <Content Include="img\check.png" />
+    <Content Include="img\flexslider\1.png" />
+    <Content Include="img\flexslider\2.png" />
+    <Content Include="img\flexslider\3.png" />
+    <Content Include="img\flexslider\4.png" />
+    <Content Include="img\flexslider\5.png" />
+    <Content Include="img\flexslider\6.png" />
+    <Content Include="img\logo.png" />
+    <Content Include="img\minus.png" />
+    <Content Include="img\pixel.png" />
+    <Content Include="img\plus.png" />
+    <Content Include="img\search.png" />
+    <Content Include="img\share-f.png" />
+    <Content Include="img\share-p.png" />
+    <Content Include="img\share-t.png" />
+    <Content Include="img\si.png" />
+    <Content Include="img\slider-nav.png" />
+    <Content Include="img\slider-nav2.png" />
+    <Content Include="img\stars.png" />
+    <Content Include="img\stars2.png" />
+    <Content Include="img\tf_300x250_v1.gif" />
+    <Content Include="img\trash\10.png" />
+    <Content Include="img\trash\11.png" />
+    <Content Include="img\trash\12.png" />
+    <Content Include="img\trash\13.png" />
+    <Content Include="img\trash\14.png" />
+    <Content Include="img\trash\15.png" />
+    <Content Include="img\trash\16.png" />
+    <Content Include="img\trash\17.png" />
+    <Content Include="img\trash\18.png" />
+    <Content Include="img\trash\19.png" />
+    <Content Include="img\trash\20.png" />
+    <Content Include="img\trash\21.png" />
+    <Content Include="img\trash\22.png" />
+    <Content Include="img\trash\23.png" />
+    <Content Include="img\trash\24.png" />
+    <Content Include="img\trash\25.png" />
+    <Content Include="img\trash\26.png" />
+    <Content Include="img\trash\27.png" />
+    <Content Include="img\trash\3.png" />
+    <Content Include="img\trash\4.png" />
+    <Content Include="img\trash\5.png" />
+    <Content Include="img\trash\6.png" />
+    <Content Include="img\trash\7.png" />
+    <Content Include="img\trash\8.png" />
+    <Content Include="img\trash\9.png" />
+    <Content Include="img\trash\author.png" />
+    <Content Include="img\twitterfeed.png" />
+    <Content Include="js\1.8.2.min.js" />
+    <Content Include="js\bootstrap.js" />
+    <Content Include="js\bootstrap.min.js" />
+    <Content Include="js\carouFredSel.js" />
+    <Content Include="js\customM.js" />
+    <Content Include="js\easing.min.js" />
+    <Content Include="js\flexslider-min.js" />
+    <Content Include="js\jflickrfeed.min.js" />
+    <Content Include="js\jquery.ba-cond.min.js" />
+    <Content Include="js\jquery.js" />
+    <Content Include="js\jquery.min.js" />
+    <Content Include="js\jquery.slitslider.js" />
+    <Content Include="js\main.js" />
+    <Content Include="js\mobilemenu.js" />
+    <Content Include="js\mypassion.js" />
+    <Content Include="js\npm.js" />
+    <Content Include="js\superfish.js" />
+    <Content Include="js\timeago.js" />
+    <Content Include="js\tweetable.js" />
+    <Content Include="js\twitter-bootstrap-hover-dropdown.min.js" />
+    <Content Include="js\ui.js" />
+    <Content Include="js\vendor\bootstrap.min.js" />
+    <Content Include="js\vendor\jquery-1.9.1.min.js" />
+    <Content Include="js\vendor\modernizr-2.6.2-respond-1.1.0.min.js" />
+    <Content Include="Kategoriler.aspx" />
+    <Content Include="script\animation.js" />
+    <Content Include="script\bootstrap-hover-dropdown.js" />
+    <Content Include="script\bootstrap.min.js" />
+    <Content Include="script\charts-chartjs.js" />
+    <Content Include="script\charts-flotchart.js" />
+    <Content Include="script\charts-highchart-area.js" />
+    <Content Include="script\charts-highchart-column-bar.js" />
+    <Content Include="script\charts-highchart-combinations.js" />
+    <Content Include="script\charts-highchart-dynamic.js" />
+    <Content Include="script\charts-highchart-line.js" />
+    <Content Include="script\charts-highchart-more.js" />
+    <Content Include="script\charts-highchart-pie.js" />
+    <Content Include="script\charts-highchart-scatter-bubble.js" />
+    <Content Include="script\custom.min.js" />
+    <Content Include="script\data.js" />
+    <Content Include="script\drilldown.js" />
+    <Content Include="script\exporting.js" />
+    <Content Include="script\funnel.js" />
+    <Content Include="script\highchart.js" />
+    <Content Include="script\highcharts-more.js" />
+    <Content Include="script\highcharts.js" />
+    <Content Include="script\holder.js" />
+    <Content Include="script\html5shiv.js" />
+    <Content Include="script\icheck.min.js" />
+    <Content Include="script\index.js" />
+    <Content Include="script\jplist.js" />
+    <Content Include="script\jplist.min.js" />
+    <Content Include="script\jquery-1.10.2.min.js" />
+    <Content Include="script\jquery-migrate-1.2.1.min.js" />
+    <Content Include="script\jquery-ui.js" />
+    <Content Include="script\jquery.cookie.js" />
+    <Content Include="script\jquery.flot.categories.js" />
+    <Content Include="script\jquery.flot.fillbetween.js" />
+    <Content Include="script\jquery.flot.js" />
+    <Content Include="script\jquery.flot.pie.js" />
+    <Content Include="script\jquery.flot.resize.js" />
+    <Content Include="script\jquery.flot.spline.js" />
+    <Content Include="script\jquery.flot.stack.js" />
+    <Content Include="script\jquery.flot.tooltip.js" />
+    <Content Include="script\jquery.menu.js" />
+    <Content Include="script\jquery.metisMenu.js" />
+    <Content Include="script\jquery.nestable.js" />
+    <Content Include="script\jquery.news-ticker.js" />
+    <Content Include="script\jquery.slimscroll.js" />
+    <Content Include="script\main.js" />
+    <Content Include="script\modernizr.min.js" />
+    <Content Include="script\pace.min.js" />
+    <Content Include="script\respond.min.js" />
+    <Content Include="script\responsive-tabs.js" />
+    <Content Include="script\ui-nestable-list.js" />
+    <Content Include="script\zabuto_calendar.min.js" />
+    <Content Include="styles\all.css" />
+    <Content Include="styles\animate.css" />
+    <Content Include="styles\bootstrap.min.css" />
+    <Content Include="styles\flat\aero%402x.png" />
+    <Content Include="styles\flat\aero.css" />
+    <Content Include="styles\flat\aero.png" />
+    <Content Include="styles\flat\all.css" />
+    <Content Include="styles\flat\blue%402x.png" />
+    <Content Include="styles\flat\blue.css" />
+    <Content Include="styles\flat\blue.png" />
+    <Content Include="styles\flat\flat%402x.png" />
+    <Content Include="styles\flat\flat.css" />
+    <Content Include="styles\flat\flat.png" />
+    <Content Include="styles\flat\green%402x.png" />
+    <Content Include="styles\flat\green.css" />
+    <Content Include="styles\flat\green.png" />
+    <Content Include="styles\flat\grey%402x.png" />
+    <Content Include="styles\flat\grey.css" />
+    <Content Include="styles\flat\grey.png" />
+    <Content Include="styles\flat\orange%402x.png" />
+    <Content Include="styles\flat\orange.css" />
+    <Content Include="styles\flat\orange.png" />
+    <Content Include="styles\flat\pink%402x.png" />
+    <Content Include="styles\flat\pink.css" />
+    <Content Include="styles\flat\pink.png" />
+    <Content Include="styles\flat\purple%402x.png" />
+    <Content Include="styles\flat\purple.css" />
+    <Content Include="styles\flat\purple.png" />
+    <Content Include="styles\flat\red%402x.png" />
+    <Content Include="styles\flat\red.css" />
+    <Content Include="styles\flat\red.png" />
+    <Content Include="styles\flat\yellow%402x.png" />
+    <Content Include="styles\flat\yellow.css" />
+    <Content Include="styles\flat\yellow.png" />
+    <Content Include="styles\font-awesome.min.css" />
+    <Content Include="styles\futurico\futurico%402x.png" />
+    <Content Include="styles\futurico\futurico.css" />
+    <Content Include="styles\futurico\futurico.png" />
+    <Content Include="styles\introjs.css" />
+    <Content Include="styles\jplist-custom.css" />
+    <Content Include="styles\jquery-ui-1.10.4.custom.min.css" />
+    <Content Include="styles\jquery.news-ticker.css" />
+    <Content Include="styles\line\aero.css" />
+    <Content Include="styles\line\all.css" />
+    <Content Include="styles\line\blue.css" />
+    <Content Include="styles\line\green.css" />
+    <Content Include="styles\line\grey.css" />
+    <Content Include="styles\line\line%402x.png" />
+    <Content Include="styles\line\line.css" />
+    <Content Include="styles\line\line.png" />
+    <Content Include="styles\line\orange.css" />
+    <Content Include="styles\line\pink.css" />
+    <Content Include="styles\line\purple.css" />
+    <Content Include="styles\line\red.css" />
+    <Content Include="styles\line\yellow.css" />
+    <Content Include="styles\main.css" />
+    <Content Include="styles\minimal\aero%402x.png" />
+    <Content Include="styles\minimal\aero.css" />
+    <Content Include="styles\minimal\aero.png" />
+    <Content Include="styles\minimal\all.css" />
+    <Content Include="styles\minimal\blue%402x.png" />
+    <Content Include="styles\minimal\blue.css" />
+    <Content Include="styles\minimal\blue.png" />
+    <Content Include="styles\minimal\green%402x.png" />
+    <Content Include="styles\minimal\green.css" />
+    <Content Include="styles\minimal\green.png" />
+    <Content Include="styles\minimal\grey%402x.png" />
+    <Content Include="styles\minimal\grey.css" />
+    <Content Include="styles\minimal\grey.png" />
+    <Content Include="styles\minimal\minimal%402x.png" />
+    <Content Include="styles\minimal\minimal.css" />
+    <Content Include="styles\minimal\minimal.png" />
+    <Content Include="styles\minimal\orange%402x.png" />
+    <Content Include="styles\minimal\orange.css" />
+    <Content Include="styles\minimal\orange.png" />
+    <Content Include="styles\minimal\pink%402x.png" />
+    <Content Include="styles\minimal\pink.css" />
+    <Content Include="styles\minimal\pink.png" />
+    <Content Include="styles\minimal\purple%402x.png" />
+    <Content Include="styles\minimal\purple.css" />
+    <Content Include="styles\minimal\purple.png" />
+    <Content Include="styles\minimal\red%402x.png" />
+    <Content Include="styles\minimal\red.css" />
+    <Content Include="styles\minimal\red.png" />
+    <Content Include="styles\minimal\yellow%402x.png" />
+    <Content Include="styles\minimal\yellow.css" />
+    <Content Include="styles\minimal\yellow.png" />
+    <Content Include="styles\nestable.css" />
+    <Content Include="styles\pace.css" />
+    <Content Include="styles\polaris\polaris%402x.png" />
+    <Content Include="styles\polaris\polaris.css" />
+    <Content Include="styles\polaris\polaris.png" />
+    <Content Include="styles\square\aero%402x.png" />
+    <Content Include="styles\square\aero.css" />
+    <Content Include="styles\square\aero.png" />
+    <Content Include="styles\square\all.css" />
+    <Content Include="styles\square\blue%402x.png" />
+    <Content Include="styles\square\blue.css" />
+    <Content Include="styles\square\blue.png" />
+    <Content Include="styles\square\green%402x.png" />
+    <Content Include="styles\square\green.css" />
+    <Content Include="styles\square\green.png" />
+    <Content Include="styles\square\grey%402x.png" />
+    <Content Include="styles\square\grey.css" />
+    <Content Include="styles\square\grey.png" />
+    <Content Include="styles\square\orange%402x.png" />
+    <Content Include="styles\square\orange.css" />
+    <Content Include="styles\square\orange.png" />
+    <Content Include="styles\square\pink%402x.png" />
+    <Content Include="styles\square\pink.css" />
+    <Content Include="styles\square\pink.png" />
+    <Content Include="styles\square\purple%402x.png" />
+    <Content Include="styles\square\purple.css" />
+    <Content Include="styles\square\purple.png" />
+    <Content Include="styles\square\red%402x.png" />
+    <Content Include="styles\square\red.css" />
+    <Content Include="styles\square\red.png" />
+    <Content Include="styles\square\square%402x.png" />
+    <Content Include="styles\square\square.css" />
+    <Content Include="styles\square\square.png" />
+    <Content Include="styles\square\yellow%402x.png" />
+    <Content Include="styles\square\yellow.css" />
+    <Content Include="styles\square\yellow.png" />
+    <Content Include="styles\style-responsive.css" />
+    <Content Include="styles\zabuto_calendar.min.css" />
+    <Content Include="upload\1212408_620x410.jpg" />
+    <Content Include="upload\1212558_620x410.jpg" />
+    <Content Include="upload\1212563_620x410.jpg" />
+    <Content Include="upload\AAAAA.jpg" />
+    <Content Include="upload\aaaaaaaa.jpg" />
+    <Content Include="upload\adD.Jpeg" />
+    <Content Include="upload\araba.jpg" />
+    <Content Include="upload\bb.jpg" />
+    <Content Include="upload\ber.jpg" />
+    <Content Include="upload\biz.jpg" />
+    <Content Include="upload\boksr.jpg" />
+    <Content Include="upload\canakkale.png" />
+    <Content Include="upload\cbfbd6ec-a5e1-4bd5-bb27-7fd44650198c.jpg" />
+    <Content Include="upload\CCCC.jpg" />
+    <Content Include="upload\davutoglu-turkiye-yi-zayiflatmak-isteyenlere-8270355_x_300.jpg" />
+    <Content Include="upload\dd.Jpeg" />
+    <Content Include="upload\DD.jpg" />
+    <Content Include="upload\dddd.Jpeg" />
+    <Content Include="upload\fff.Jpeg" />
+    <Content Include="upload\fft107_mf7367906.Jpeg" />
+    <Content Include="upload\fft107_mf7373227.Jpeg" />
+    <Content Include="upload\fft107_mf7373315.Jpeg" />
+    <Content Include="upload\fft107_mf7376097.Jpeg" />
+    <Content Include="upload\fft107_mf7377827.Jpeg" />
+    <Content Include="upload\gs.Jpeg" />
+    <Content Include="upload\gs.jpg" />
+    <Content Include="upload\HH.jpg" />
+    <Content Include="upload\kays.jpg" />
+    <Content Include="upload\KK.jpg" />
+    <Content Include="upload\mb.jpg" />
+    <Content Include="upload\necati.Jpeg" />
+    <Content Include="upload\pat.jpg" />
+    <Content Include="upload\PP.jpg" />
+    <Content Include="upload\qq.Jpeg" />
+    <Content Include="upload\rarda.Jpeg" />
+    <Content Include="upload\rss.jpg" />
+    <Content Include="upload\s-684f0b64fd5d8e2be1144d3e7953a50e68fce770.jpg" />
+    <Content Include="upload\sds.Jpeg" />
+    <Content Include="upload\ss.jpg" />
+    <Content Include="upload\suriye.Jpeg" />
+    <Content Include="upload\tr.jpg" />
+    <Content Include="upload\UU.jpg" />
+    <Content Include="upload\ış.jpg" />
+    <Content Include="uyegiris.aspx" />
+    <Content Include="Web.config" />
+    <Content Include="YonetimDefault.aspx" />
+    <Content Include="YonetimLogin.aspx" />
+    <Content Include="yorumekle.aspx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="detay.aspx.cs">
+      <DependentUpon>detay.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="detay.aspx.designer.cs">
+      <DependentUpon>detay.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="duzenle.aspx.cs">
+      <DependentUpon>duzenle.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="duzenle.aspx.designer.cs">
+      <DependentUpon>duzenle.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="haberler.aspx.cs">
+      <DependentUpon>haberler.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="haberler.aspx.designer.cs">
+      <DependentUpon>haberler.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Kategoriler.aspx.cs">
+      <DependentUpon>Kategoriler.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Kategoriler.aspx.designer.cs">
+      <DependentUpon>Kategoriler.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="sqlconnection.cs" />
+    <Compile Include="user.Master.cs">
+      <DependentUpon>user.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="user.Master.designer.cs">
+      <DependentUpon>user.Master</DependentUpon>
+    </Compile>
+    <Compile Include="uyegiris.aspx.cs">
+      <DependentUpon>uyegiris.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="uyegiris.aspx.designer.cs">
+      <DependentUpon>uyegiris.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="YonetimDefault.aspx.cs">
+      <DependentUpon>YonetimDefault.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="YonetimDefault.aspx.designer.cs">
+      <DependentUpon>YonetimDefault.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="YonetimLogin.aspx.cs">
+      <DependentUpon>YonetimLogin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="YonetimLogin.aspx.designer.cs">
+      <DependentUpon>YonetimLogin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="YonetimPaneli.Master.cs">
+      <DependentUpon>YonetimPaneli.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="YonetimPaneli.Master.designer.cs">
+      <DependentUpon>YonetimPaneli.Master</DependentUpon>
+    </Compile>
+    <Compile Include="yorumekle.aspx.cs">
+      <DependentUpon>yorumekle.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="yorumekle.aspx.designer.cs">
+      <DependentUpon>yorumekle.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="css\.DS_Store" />
+    <Content Include="css\bootstrap-theme.css.map" />
+    <Content Include="css\bootstrap-theme.min.css.map" />
+    <Content Include="css\bootstrap.css.map" />
+    <Content Include="css\bootstrap.min.css.map" />
+    <Content Include="css\fontello\font\fontello0792.eot" />
+    <Content Include="css\fontello\font\fontello0792.ttf" />
+    <Content Include="css\fontello\font\fontello0792.woff" />
+    <Content Include="css\main.less" />
+    <Content Include="css\mixins.less" />
+    <Content Include="css\variables.less" />
+    <Content Include="js\.DS_Store" />
+    <Content Include="bin\CKEditor.NET.dll.refresh" />
+    <Content Include="bin\newswebsite.dll.config" />
+    <Content Include="bin\roslyn\csc.exe.config" />
+    <Content Include="bin\roslyn\csc.rsp" />
+    <Content Include="bin\roslyn\csi.exe.config" />
+    <Content Include="bin\roslyn\csi.rsp" />
+    <Content Include="bin\roslyn\Microsoft.CSharp.Core.targets" />
+    <Content Include="bin\roslyn\Microsoft.Managed.Core.targets" />
+    <Content Include="bin\roslyn\Microsoft.VisualBasic.Core.targets" />
+    <Content Include="bin\roslyn\vbc.exe.config" />
+    <Content Include="bin\roslyn\vbc.rsp" />
+    <Content Include="bin\roslyn\VBCSCompiler.exe.config" />
+    <None Include="packages.config" />
+    <Content Include="user.Master" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <Content Include="YonetimPaneli.Master" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>59037</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>https://localhost:44385/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', 'packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+    <Error Condition="!Exists('packages\EntityFramework.6.4.4\build\EntityFramework.props')" Text="$([System.String]::Format('$(ErrorText)', 'packages\EntityFramework.6.4.4\build\EntityFramework.props'))" />
+    <Error Condition="!Exists('packages\EntityFramework.6.4.4\build\EntityFramework.targets')" Text="$([System.String]::Format('$(ErrorText)', 'packages\EntityFramework.6.4.4\build\EntityFramework.targets'))" />
+  </Target>
+  <Import Project="packages\EntityFramework.6.4.4\build\EntityFramework.targets" Condition="Exists('packages\EntityFramework.6.4.4\build\EntityFramework.targets')" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
